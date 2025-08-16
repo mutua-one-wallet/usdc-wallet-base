@@ -16,7 +16,7 @@ Before you begin, ensure you have the following installed:
 
 \`\`\`bash
 # Clone the repository
-git clone https://github.com/your-username/usdc-wallet-base.git
+git clone [https://github.com/your-username/usdc-wallet-base.git](https://github.com/mutua-one-wallet/usdc-wallet-base.git)
 cd usdc-wallet-base
 
 # Install backend dependencies
