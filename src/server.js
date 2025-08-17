@@ -17,6 +17,9 @@ const transactionRoutes = require("./routes/transactions")
 const whitelabelRoutes = require("./routes/whitelabel")
 const backupRoutes = require("./routes/backup")
 const contactRoutes = require("./routes/contacts")
+const developerApiRoutes = require("./routes/api/v1/developer")
+const developerDashboardRoutes = require("./routes/developer-dashboard")
+const billingRoutes = require("./routes/billing")
 
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -67,6 +70,9 @@ app.use("/api/transactions", transactionRoutes)
 app.use("/api/whitelabel", whitelabelRoutes)
 app.use("/api/backup", backupRoutes)
 app.use("/api/contacts", contactRoutes)
+app.use("/api/v1", developerApiRoutes)
+app.use("/api/developer", developerDashboardRoutes)
+app.use("/api/billing", billingRoutes)
 
 // 404 handler
 app.use("*", (req, res) => {
