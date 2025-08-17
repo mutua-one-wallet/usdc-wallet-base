@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # USDC Wallet - Autocustodial Wallet for Base Network
 
 A complete **autocustodial USDC wallet solution** built for the Base network with **white-labeling capabilities** and **Wallet-as-a-Service (WaaS) APIs**. This enterprise-grade platform allows businesses to offer branded wallet services while maintaining full custody control for end users.
@@ -69,8 +68,8 @@ A complete **autocustodial USDC wallet solution** built for the Base network wit
 
 ### 1. Clone the Repository
 \`\`\`bash
-git clone https://github.com/yourusername/usdc-wallet.git
-cd usdc-wallet
+git clone [https://github.com/mutua-one-wallet/usdc-wallet-base.git](https://github.com/mutua-one-wallet/usdc-wallet-base.git)
+cd usdc-wallet-base
 \`\`\`
 
 ### 2. Backend Setup
@@ -208,7 +207,7 @@ psql -d usdc_wallet -f scripts/005_create_api_tables.sql
 All API requests require an API key in the header:
 \`\`\`bash
 curl -H "X-API-Key: your_api_key_here" \
-     https://api.yourdomain.com/api/v1/wallets
+     https://api.mutua.one/api/v1/wallets
 \`\`\`
 
 ### Create a Wallet
@@ -217,7 +216,7 @@ curl -X POST \
   -H "X-API-Key: your_api_key_here" \
   -H "Content-Type: application/json" \
   -d '{"user_id": "user123", "name": "My USDC Wallet"}' \
-  https://api.yourdomain.com/api/v1/wallets
+  https://api.mutua.one/api/v1/wallets
 \`\`\`
 
 ### Send USDC
@@ -229,13 +228,13 @@ curl -X POST \
     "to_address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
     "amount": 10.50
   }' \
-  https://api.yourdomain.com/api/v1/wallets/{wallet_id}/send
+  https://api.mutua.one/api/v1/wallets/{wallet_id}/send
 \`\`\`
 
 ### Get Balance
 \`\`\`bash
 curl -H "X-API-Key: your_api_key_here" \
-     https://api.yourdomain.com/api/v1/wallets/{wallet_id}/balance
+     https://api.mutua.one/api/v1/wallets/{wallet_id}/balance
 \`\`\`
 
 ### Manage Contacts
@@ -247,7 +246,7 @@ curl -X POST \
     "contact_name": "John Doe",
     "contact_address": "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6"
   }' \
-  https://api.yourdomain.com/api/v1/wallets/{wallet_id}/contacts
+  https://api.mutua.one/api/v1/wallets/{wallet_id}/contacts
 \`\`\`
 
 ## 📚 Documentation
@@ -334,7 +333,7 @@ Before you begin, ensure you have the following installed:
 
 \`\`\`bash
 # Clone the repository
-git clone [https://github.com/your-username/usdc-wallet-base.git](https://github.com/mutua-one-wallet/usdc-wallet-base.git)
+git clone [https://github.com/mutua-one-wallet/usdc-wallet-base.git](https://github.com/mutua-one-wallet/usdc-wallet-base.git)
 cd usdc-wallet-base
 
 # Install backend dependencies
